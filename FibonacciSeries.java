@@ -7,7 +7,7 @@ public class FibonacciSeries {
         }
     }
     static int fibonacci(int n){
-        return (int) ((Math.pow(((1+Math.sqrt(5))/2),n)-Math.pow(((1-Math.sqrt(5))/2),n))/Math.sqrt(5));
+        return (int) ((Math.pow(((1+Math.sqrt(5))/2),n))/Math.sqrt(5));
 //          if (n<2){
 //            return n;
 //        }
