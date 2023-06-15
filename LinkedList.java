@@ -50,6 +50,11 @@ public class LinkedList {
         size++;
     }
 
+//    insert using recursion
+    public void recinsert(int val,int index){
+
+    }
+
     //deleting value from the last of the linked list
     public int deleteFirst() {
         int val = head.value;
@@ -87,6 +92,21 @@ public class LinkedList {
         prev.next=prev.next.next;
         size--;
         return val;
+    }
+
+    public void duplicates() {
+        Node node = head;
+        while (node.next != null) {
+            if (node.value==node.next.value){
+                node.next=node.next.next;
+                size--;
+            }
+            else {
+                node=node.next;
+            }
+        }
+        tail=node;
+        tail.next=null;
     }
 
     //    finding node in a linked list by its index
@@ -140,15 +160,23 @@ public class LinkedList {
         LinkedList second = new LinkedList();
 
         first.insertLast(1);
+        first.insertLast(1);
+        first.insertLast(1);
         first.insertLast(3);
         first.insertLast(5);
+        first.insertLast(5);
+        first.insertLast(5);
+        first.display();
+        first.duplicates();
+        first.display();
 
         second.insertLast(1);
         second.insertLast(2);
         second.insertLast(9);
         second.insertLast(14);
-
         first.display();
+
+
 
     }
 
