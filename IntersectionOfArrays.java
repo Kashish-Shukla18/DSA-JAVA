@@ -9,7 +9,7 @@ public class IntersectionOfArrays {
         System.out.println(intersection(arr1,arr2,7,4));
     }
     static int intersection(int[] a,int[] b,int m,int n) {
-        HashSet<Integer> s = new HashSet<Integer>();
+        HashSet<Integer> s = new HashSet<>();
         for(int i = 0; i < m; i++)
             s.add(a[i]);
             int res = 0;
