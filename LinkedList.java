@@ -155,6 +155,8 @@ public class LinkedList {
             this.next = next;
         }
     }
+    
+//     Main Function
     public static void main(String[] args) {
         LinkedList first = new LinkedList();
         LinkedList second = new LinkedList();
